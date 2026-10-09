@@ -1,0 +1,19 @@
+id,name,slot,occasion,formality,warmth,color,season
+001,white tee,base,daily,1,1,white,all
+002,black tee,base,daily,1,1,black,all
+003,pink crop top,base,party,2,1,pink,summer
+004,beige knit,base,date,2,2,beige,winter
+005,white shirt,base,formal,3,1,white,all
+006,navy overshirt,mid,daily,2,2,navy,all
+007,grey cardigan,mid,date,2,2,grey,winter
+008,black blazer,outer,formal,3,2,black,all
+009,denim jacket,outer,daily,1,2,blue,all
+010,puffer coat,outer,daily,1,3,black,winter
+011,blue jeans,bottom,daily,1,2,blue,all
+012,black trousers,bottom,formal,3,2,black,all
+013,yellow skirt,bottom,party,2,1,yellow,summer
+014,beige chinos,bottom,date,2,2,beige,all
+015,white sneakers,shoes,daily,1,1,white,all
+016,black boots,shoes,formal,3,1,black,all
+017,black loafers,shoes,formal,3,1,black,all
+018,pink sandals,shoes,party,2,1,pink,summer
