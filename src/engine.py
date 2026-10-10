@@ -69,6 +69,7 @@ def candidates_for_slot(catalogue, slot, occasion, is_raining):
 def build_outfits(catalogue, temp_c, occasion, is_raining=False, extra_layer=False):
     """Returns (list of outfits, name of a slot with no items or None)."""
     available = filter_by_weather(catalogue, temp_c, is_raining)
+
     slots = layers_for(temp_c)
     if extra_layer and "mid" not in slots:
         slots = slots[:1] + ["mid"] + slots[1:]
@@ -76,9 +77,12 @@ def build_outfits(catalogue, temp_c, occasion, is_raining=False, extra_layer=Fal
 
     options = []
     for slot in slots:
+        if slot not in catalogue["slot"].values:
+            continue
+
         found = candidates_for_slot(available, slot, occasion, is_raining)
         if found.empty:
-            return [], slot               # stop: nothing for this slot
+            return [], slot
         options.append(found["name"].tolist())
 
     return list(product(*options)), None
