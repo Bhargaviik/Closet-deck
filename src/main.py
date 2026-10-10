@@ -3,7 +3,7 @@ from engine import build_outfits, rank_outfits
 
 catalogue = pd.read_csv("data/catalogue.csv", dtype={"id": str})
 
-OCCASIONS = ["daily", "formal", "party", "date"]
+OCCASIONS = ["daily", "formal", "party", "date", "sport"]
 
 
 def ask(question, default):
@@ -45,7 +45,8 @@ if colour == "none":
     colour = None
 
 outfits, missing = build_outfits(catalogue, temp_c, occasion, is_raining, extra_layer)
-
+if is_raining:
+    print("It's raining: wear your raincoat over any outfit.")
 print()
 if missing:
     print("Sorry, no items for slot:", missing)

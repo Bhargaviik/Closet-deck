@@ -1,20 +1,85 @@
-id,name,slot,occasion,formality,warmth,color,season
-001,white tee,base,daily,1,1,white,all
-002,black tee,base,daily,1,1,black,all
-003,pink crop top,base,party,2,1,pink,summer
-004,beige knit,base,date,2,2,beige,winter
-005,white shirt,base,formal,3,1,white,all
-006,navy overshirt,mid,daily,2,2,navy,all
-007,grey cardigan,mid,date,2,2,grey,winter
-008,black blazer,outer,formal,3,2,black,all
-009,denim jacket,outer,daily,1,2,blue,all
-010,puffer coat,outer,daily,1,3,black,winter
-011,blue jeans,bottom,daily,1,2,blue,all
-012,black trousers,bottom,formal,3,2,black,all
-013,yellow skirt,bottom,party,2,1,yellow,summer
-014,beige chinos,bottom,date,2,2,beige,all
-015,white sneakers,shoes,daily,1,1,white,all
-016,black boots,shoes,formal,3,1,black,all
-017,black loafers,shoes,formal,3,1,black,all
-018,pink sandals,shoes,party,2,1,pink,summer
-019,green rain boots,shoes,daily,1,1,green,all
+id,name,slot,daily,formal,party,date,sport,formality,warmth,color,season
+001,brown teddy zip jacket,outer,1,0,0,1,0,1,2,brown,winter
+002,light blue fluffy hooded fleece,outer,1,0,0,1,0,1,2,blue,winter
+003,black quilted trench coat,outer,1,0,0,0,0,3,2,black,winter
+004,olive parka with fur hood,outer,1,0,0,0,0,1,3,green,winter
+005,black half-zip hoodie,mid,1,0,0,0,0,1,2,black,all
+006,brown puffer vest,mid,1,0,0,0,0,1,2,brown,winter
+007,olive leather gloves,accessory,1,0,0,0,0,2,2,green,winter
+008,grey knit beanie,accessory,1,0,0,0,0,1,2,grey,winter
+009,cream cable cardigan,mid,1,0,0,0,0,2,1,white,all
+010,pink hooded windcheater,outer,0,0,0,0,1,1,1,pink,all
+012,black sports half-zip top,mid,0,0,0,0,1,1,2,black,all
+013,black zip hoodie,outer,1,0,0,0,1,1,2,black,all
+014,blue printed kaftan dress,base,1,0,0,0,0,2,1,blue,summer
+015,cream knit vest,mid,1,1,1,0,0,2,1,white,all
+016,teal turtleneck,base,1,1,0,0,0,2,3,blue,winter
+017,red turtleneck,base,1,1,0,0,0,2,3,red,winter
+018,berry turtleneck,base,1,1,0,0,0,2,3,pink,winter
+019,dusty pink ribbed mock-neck,base,1,1,0,0,0,2,3,pink,winter
+020,olive cowl-neck top,base,1,1,0,0,0,1,3,green,winter
+021,white eyelet short-sleeve blouse,base,1,0,0,1,0,2,1,white,summer
+022,royal blue sleeveless mock-neck top,base,0,1,0,0,0,2,1,blue,all
+023,cream ribbed polo crop top,base,1,0,0,0,1,1,1,white,summer
+024,tan ribbed halter top,base,1,0,1,0,0,1,1,beige,summer
+025,white striped sleeveless top,base,1,0,0,0,0,1,1,white,summer
+026,black ribbed mock-neck top,base,1,1,1,1,0,2,3,black,winter
+027,brown lace ruffle top,base,0,0,1,1,0,2,1,brown,summer
+028,black twist-front crop top,base,1,0,1,0,0,2,1,black,summer
+029,red leaf-print strappy top,base,1,0,0,0,0,1,1,red,summer
+030,white floral sleeveless tunic,base,1,0,0,0,0,2,1,white,summer
+031,navy draped cowl-neck top,base,0,1,1,1,0,3,1,navy,all
+032,white cotton turtleneck,base,1,1,0,0,0,2,2,white,all
+033,wine lace-trim wrap top,base,1,0,1,1,0,2,1,red,all
+034,maroon cotton t-shirt,base,1,0,0,0,1,1,1,maroon,all
+035,olive printed halter top,base,1,0,0,0,0,1,1,green,all
+036,black ribbed cutout crop top,base,1,1,0,1,0,1,1,black,all
+037,brown one-shoulder ruched top,base,0,1,1,1,0,2,1,brown,all
+038,rust ribbed henley top,base,1,0,0,0,0,1,2,brown,all
+039,peach lace-trim crop top,base,1,0,0,0,0,2,2,pink,all
+040,white lace-trim ribbed tank,base,1,0,0,0,0,1,1,white,all
+041,cream bow-print crop tee,base,1,0,0,0,0,1,1,white,all
+042,grey ribbed v-neck knit,base,1,1,0,0,0,1,2,grey,all
+043,red racerback tank,base,1,0,1,1,0,1,1,red,summer
+044,hot pink cap-sleeve tee,base,1,0,0,0,0,1,1,pink,all
+045,light blue crop tee,base,1,0,0,0,0,1,1,blue,all
+046,pale yellow lace-trim cami,base,1,0,1,1,0,1,1,yellow,summer
+047,black leggings,bottom,1,0,0,0,0,1,3,black,winter
+048,black flared yoga pants,bottom,1,0,1,0,1,1,2,black,all
+049,black mini skirt with slit,bottom,1,1,1,1,0,2,1,black,all
+050,light blue textured wide-leg pants,bottom,1,0,0,0,0,1,2,blue,all
+051,olive linen wide-leg pants,bottom,1,0,0,0,0,2,1,brown,summer
+052,grey sweat flares,bottom,1,0,0,0,1,1,2,grey,all
+053,mid blue wide-leg jeans,bottom,1,0,0,0,0,1,2,denim,all
+054,cream butterfly mock-neck top,base,1,1,0,1,0,1,2,white,all
+055,light grey sweatpants,bottom,1,0,0,0,1,1,2,grey,all
+056,dusty pink track pants,bottom,1,0,0,0,1,1,2,pink,summer
+057,distressed denim dungaree shorts,bottom,1,0,1,0,0,1,1,denim,summer
+058,acid wash wide-leg jeans,bottom,1,0,1,1,0,1,2,denim,all
+059,light blue straight jeans,bottom,1,0,1,1,0,1,2,denim,all
+060,black fleece-lined tights,bottom,1,1,1,1,0,1,3,black,winter
+061,black white check tiered maxi skirt,bottom,1,0,1,1,0,1,1,black,all
+062,paisley wrap maxi skirt,bottom,0,0,1,1,0,2,1,white,all
+063,white pleated shorts,bottom,1,0,0,0,0,2,1,white,summer
+064,navy striped wide-leg pants,bottom,1,1,0,1,0,2,1,navy,summer
+065,navy polka-dot wrap dress,base,0,0,1,1,0,2,1,navy,summer
+066,orange not-so-sweet crop tee,base,1,0,0,0,1,1,1,orange,all
+067,navy plaid flannel shirt,mid,1,0,0,0,0,1,2,navy,winter
+068,black pencil skirt,bottom,0,1,0,0,0,3,2,black,all
+069,suzani-print wide-leg pants,bottom,0,0,1,0,0,2,1,white,all
+070,cream lace ruffle mini skirt,bottom,0,0,1,1,0,2,1,white,all
+071,white tiered chiffon midi skirt,bottom,0,0,1,1,0,2,1,white,all
+072,pink rose-print ruched midi dress,base,0,0,1,1,0,2,1,pink,summer
+073,black floral maxi cami dress,base,0,0,1,1,0,2,1,black,summer
+074,beige ribbed polo midi dress,base,1,1,0,1,0,2,1,white,summer
+075,brown lily-print mesh midi dress,base,0,1,1,0,0,2,1,brown,summer
+076,beige satin v-neck blouse,base,0,1,0,0,0,3,1,beige,all
+077,red floral mesh long-sleeve dress,base,0,1,1,1,0,2,2,red,all
+078,pink striped bow wrap top,base,0,1,0,0,0,2,1,pink,summer
+079,teal button-up blouse,base,0,1,0,0,0,2,1,blue,all
+080,brown crinkle halter top,base,0,0,1,1,0,2,1,brown,summer
+081,brown plaid mesh slip dress,base,0,0,1,1,0,2,1,brown,summer
+082,pale yellow knit cap-sleeve top,base,0,1,0,1,0,1,2,yellow,all
+083,black blazer,outer,0,1,0,0,0,3,2,black,all
+084,rust puff-sleeve crop top,base,0,0,1,1,0,1,1,brown,all
+085,cream ruffle tie-front cami,base,0,0,1,1,0,1,1,white,summer

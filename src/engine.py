@@ -41,7 +41,7 @@ def layers_for(temp_c):
 
 
 def filter_by_occasion(catalogue, occasion):
-    return catalogue[catalogue["occasion"] == occasion]
+    return catalogue[catalogue[occasion] == 1]
 
 
 def filter_by_weather(catalogue, temp_c, is_raining=False):
@@ -60,8 +60,8 @@ def candidates_for_slot(catalogue, slot, occasion, is_raining):
     in_slot = catalogue[catalogue["slot"] == slot]
     is_boots = in_slot["name"].str.contains(RAIN_BOOTS)
 
-    if slot == "shoes" and is_raining:
-        return in_slot[is_boots]          # rain: shoes must be rain boots
+    if slot == "shoes" and is_raining and is_boots.any():
+        return in_slot[is_boots]         # rain: shoes must be rain boots
 
     return filter_by_occasion(in_slot[~is_boots], occasion)
 
