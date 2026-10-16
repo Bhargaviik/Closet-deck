@@ -4,21 +4,15 @@ import torch
 from PIL import Image, ImageOps
 from transformers import CLIPModel, CLIPProcessor
 
-MODEL_NAME = "openai/clip-vit-base-patch32"
+from settings import as_tensor, embeddings_file, pick_model
 
-
-def as_tensor(output):
-    """Newer versions of transformers return an object, older ones a tensor."""
-    if torch.is_tensor(output):
-        return output
-    return output.pooler_output
-
+key, model_name = pick_model()
 
 catalogue = pd.read_csv("data/catalogue.csv", dtype={"id": str})
 
-print("Loading CLIP (the first run downloads about 600 MB)...")
-model = CLIPModel.from_pretrained(MODEL_NAME)
-processor = CLIPProcessor.from_pretrained(MODEL_NAME)
+print(f"Loading {model_name} (the first run downloads about 600 MB)...")
+model = CLIPModel.from_pretrained(model_name)
+processor = CLIPProcessor.from_pretrained(model_name)
 model.eval()
 
 vectors = []
@@ -35,5 +29,5 @@ for number, item_id in enumerate(catalogue["id"], start=1):
     print(f"{number}/{len(catalogue)}  {item_id}")
 
 vectors = np.stack(vectors)
-np.save("data/embeddings.npy", vectors)
-print("Saved embeddings with shape", vectors.shape)
+np.save(embeddings_file(key), vectors)
+print("Saved", embeddings_file(key), "with shape", vectors.shape)

@@ -1,0 +1,85 @@
+id,name,predicted,hit
+001,brown teddy zip jacket,daily,1
+002,light blue fluffy hooded fleece,daily,1
+003,black quilted trench coat,formal,0
+004,olive parka with fur hood,daily,1
+005,black half-zip hoodie,daily,1
+006,brown puffer vest,daily,1
+007,olive leather gloves,formal,0
+008,grey knit beanie,daily,1
+009,cream cable cardigan,daily,1
+010,pink hooded windcheater,sport,1
+012,black sports half-zip top,sport,1
+013,black zip hoodie,sport,1
+014,blue printed kaftan dress,daily,1
+015,cream knit vest,daily,1
+016,teal turtleneck,daily,1
+017,red turtleneck,daily,1
+018,berry turtleneck,daily,1
+019,dusty pink ribbed mock-neck,daily,1
+020,olive cowl-neck top,daily,1
+021,white eyelet short-sleeve blouse,daily,1
+022,royal blue sleeveless mock-neck top,sport,0
+023,cream ribbed polo crop top,sport,1
+024,tan ribbed halter top,daily,1
+025,white striped sleeveless top,sport,0
+026,black ribbed mock-neck top,daily,1
+027,brown lace ruffle top,date,1
+028,black twist-front crop top,sport,0
+029,red leaf-print strappy top,daily,1
+030,white floral sleeveless tunic,date,0
+031,navy draped cowl-neck top,daily,0
+032,white cotton turtleneck,daily,1
+033,wine lace-trim wrap top,formal,0
+034,maroon cotton t-shirt,daily,1
+035,olive printed halter top,daily,1
+036,black ribbed cutout crop top,sport,0
+037,brown one-shoulder ruched top,daily,0
+038,rust ribbed henley top,daily,1
+039,peach lace-trim crop top,sport,0
+040,white lace-trim ribbed tank,daily,1
+041,cream bow-print crop tee,daily,1
+042,grey ribbed v-neck knit,daily,1
+043,red racerback tank,sport,0
+044,hot pink cap-sleeve tee,daily,1
+045,light blue crop tee,daily,1
+046,pale yellow lace-trim cami,daily,1
+047,black leggings,sport,0
+048,black flared yoga pants,sport,1
+049,black mini skirt with slit,formal,1
+050,light blue textured wide-leg pants,daily,1
+051,olive linen wide-leg pants,daily,1
+052,grey sweat flares,sport,1
+053,mid blue wide-leg jeans,daily,1
+054,cream butterfly mock-neck top,sport,0
+055,light grey sweatpants,daily,1
+056,dusty pink track pants,sport,1
+057,distressed denim dungaree shorts,daily,1
+058,acid wash wide-leg jeans,daily,1
+059,light blue straight jeans,daily,1
+060,black fleece-lined tights,sport,0
+061,black white check tiered maxi skirt,daily,1
+062,paisley wrap maxi skirt,formal,0
+063,white pleated shorts,daily,1
+064,navy striped wide-leg pants,formal,1
+065,navy polka-dot wrap dress,date,1
+066,orange not-so-sweet crop tee,sport,1
+067,navy plaid flannel shirt,daily,1
+068,black pencil skirt,formal,1
+069,suzani-print wide-leg pants,formal,0
+070,cream lace ruffle mini skirt,date,1
+071,white tiered chiffon midi skirt,formal,0
+072,pink rose-print ruched midi dress,date,1
+073,black floral maxi cami dress,formal,0
+074,beige ribbed polo midi dress,formal,1
+075,brown lily-print mesh midi dress,formal,1
+076,beige satin v-neck blouse,formal,1
+077,red floral mesh long-sleeve dress,date,1
+078,pink striped bow wrap top,date,0
+079,teal button-up blouse,daily,0
+080,brown crinkle halter top,daily,0
+081,brown plaid mesh slip dress,formal,0
+082,pale yellow knit cap-sleeve top,daily,0
+083,black blazer,formal,1
+084,rust puff-sleeve crop top,daily,0
+085,cream ruffle tie-front cami,formal,0

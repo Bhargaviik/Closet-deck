@@ -4,10 +4,13 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold, cross_val_predict
 from sklearn.metrics import precision_score, recall_score
 
-OCCASIONS = ["daily", "formal", "party", "date", "sport"]
+from settings import OCCASIONS, embeddings_file, pick_model
+
+key, model_name = pick_model()
 
 catalogue = pd.read_csv("data/catalogue.csv", dtype={"id": str})
-X = np.load("data/embeddings.npy")
+X = np.load(embeddings_file(key))
+print("Model:", model_name)
 print("Embeddings:", X.shape, " Items:", len(catalogue))
 
 # 5 folds: train on ~67 garments, test on ~17 the model has never seen
@@ -31,5 +34,5 @@ best = scores.argmax(axis=1)
 true = catalogue[OCCASIONS].values
 hits = true[np.arange(len(true)), best] == 1
 print(f"\nTrained classifier hit rate: {hits.mean():.1%}")
-print("CLIP zero-shot hit rate:     61.9%")
-print("Always 'daily':              70.2%")
+print(f"Random guess:                {true.sum(axis=1).mean() / len(OCCASIONS):.1%}")
+print(f"Always 'daily':              {true[:, 0].mean():.1%}")
