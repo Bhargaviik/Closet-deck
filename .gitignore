@@ -4,9 +4,5 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 
-# private clothing photos
-data/Photos/
-data/photos/
-
 # big public dataset (download it yourself, see README)
 data/polyvore/
